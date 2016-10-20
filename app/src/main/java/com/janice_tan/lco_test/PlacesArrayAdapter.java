@@ -69,7 +69,7 @@ public class PlacesArrayAdapter extends ArrayAdapter <Place> {
         }
 
         viewHolder.title.setText(place.getName());
-        viewHolder.category.setText(((Category) place.getCategory()).getName() + " (" + place.getDisplayDate() + ")");
+        viewHolder.category.setText(place.getCategory().getName() + " (" + place.getDisplayDate() + ")");
         //viewHolder.rating.setText("" + place.getRating());
 
         String fileName = place.getImagePath();

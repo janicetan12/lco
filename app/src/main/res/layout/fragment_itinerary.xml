@@ -7,7 +7,7 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/tab_itenerary"
+        android:text="@string/tab_itinerary"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:gravity="center_horizontal"

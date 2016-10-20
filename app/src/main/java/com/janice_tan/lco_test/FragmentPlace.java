@@ -37,15 +37,15 @@ public class FragmentPlace extends ListFragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        toolbar = (Toolbar) ((MainActivity) this.getActivity()).findViewById(R.id.toolbar);
+        toolbar = (Toolbar) this.getActivity().findViewById(R.id.toolbar);
         ((MainActivity) getActivity()).setSupportActionBar(toolbar);
         ((MainActivity) getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(false);
         setHasOptionsMenu(true);
 
 
         dbHandler = new DBHandler(this.getActivity());
-        categoryId = dbHandler.CATEGORY_ALL;
-        orderBy = dbHandler.KEY_PLACE_NAME;
+        categoryId = DBHandler.CATEGORY_ALL;
+        orderBy = DBHandler.KEY_PLACE_NAME;
         direction = ORDER_BY_ASC;
 
         ArrayList places = dbHandler.getAllPlaces(orderBy, direction, categoryId);
@@ -69,7 +69,7 @@ public class FragmentPlace extends ListFragment {
         };
         setListAdapter(placesAdapter);*/
 
-        placesAdapter = new PlacesArrayAdapter(((MainActivity) this.getActivity()), 0, places);
+        placesAdapter = new PlacesArrayAdapter(this.getActivity(), 0, places);
         setListAdapter(placesAdapter);
     }
 
@@ -90,7 +90,7 @@ public class FragmentPlace extends ListFragment {
             public boolean onQueryTextChange(String newText) {
 
                 if (TextUtils.isEmpty(newText)){
-                    ArrayList places = dbHandler.getAllPlaces(dbHandler.KEY_PLACE_NAME, dbHandler.ORDER_BY_ASC, dbHandler.CATEGORY_ALL);
+                    ArrayList places = dbHandler.getAllPlaces(DBHandler.KEY_PLACE_NAME, ORDER_BY_ASC, DBHandler.CATEGORY_ALL);
                     loadListData(places);
                 }
 
@@ -130,12 +130,12 @@ public class FragmentPlace extends ListFragment {
                 return true;
 
             case R.id.action_sort:
-                View menuItemView = ((MainActivity)getActivity()).findViewById(R.id.action_sort);
+                View menuItemView = getActivity().findViewById(R.id.action_sort);
                 showSortByMenu(menuItemView);
                 return true;
 
             case R.id.action_filter:
-                View menuItemFilterView = ((MainActivity)getActivity()).findViewById(R.id.action_filter);
+                View menuItemFilterView = getActivity().findViewById(R.id.action_filter);
                 showFilterMenu(menuItemFilterView);
                 return true;
 
@@ -174,27 +174,27 @@ public class FragmentPlace extends ListFragment {
 
             switch (item.getItemId()) {
                 case R.id.sort_alphabet_asc:
-                    updatePlaces(dbHandler.KEY_PLACE_NAME, dbHandler.ORDER_BY_ASC, categoryId);
+                    updatePlaces(DBHandler.KEY_PLACE_NAME, ORDER_BY_ASC, categoryId);
                     return true;
 
                 case R.id.sort_alphabet_desc:
-                    updatePlaces(dbHandler.KEY_PLACE_NAME, dbHandler.ORDER_BY_DESC, categoryId);
+                    updatePlaces(DBHandler.KEY_PLACE_NAME, DBHandler.ORDER_BY_DESC, categoryId);
                     return true;
 
                 case R.id.sort_date_asc:
-                    updatePlaces(dbHandler.KEY_PLACE_UPDATED, dbHandler.ORDER_BY_ASC, categoryId);
+                    updatePlaces(DBHandler.KEY_PLACE_UPDATED, ORDER_BY_ASC, categoryId);
                     return true;
 
                 case R.id.sort_date_desc:
-                    updatePlaces(dbHandler.KEY_PLACE_UPDATED, dbHandler.ORDER_BY_DESC, categoryId);
+                    updatePlaces(DBHandler.KEY_PLACE_UPDATED, DBHandler.ORDER_BY_DESC, categoryId);
                     return true;
 
                 case R.id.sort_rating_asc:
-                    updatePlaces(dbHandler.KEY_PLACE_RATING, dbHandler.ORDER_BY_ASC, categoryId);
+                    updatePlaces(DBHandler.KEY_PLACE_RATING, ORDER_BY_ASC, categoryId);
                     return true;
 
                 case R.id.sort_rating_desc:
-                    updatePlaces(dbHandler.KEY_PLACE_RATING, dbHandler.ORDER_BY_DESC, categoryId);
+                    updatePlaces(DBHandler.KEY_PLACE_RATING, DBHandler.ORDER_BY_DESC, categoryId);
                     return true;
 
                 default:
@@ -229,7 +229,7 @@ public class FragmentPlace extends ListFragment {
         filterMenu.getMenu().add(Menu.NONE, -1, Menu.NONE, "All");
 
         for(int i = 0; i < categoryList.size(); i ++) {
-            Category category = (Category) categoryList.get(i);
+            Category category = categoryList.get(i);
             filterMenu.getMenu().add(Menu.NONE, category.getId(), Menu.NONE, category.getName());
         }
 
