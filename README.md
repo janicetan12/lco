@@ -38,16 +38,17 @@ PLACES
 * CATEGORY_ID (INTEGER)
 
 ## App Screenshots
-<p align="center">
+<p>
   <img src="https://github.com/janicetan12/lco/blob/master/images/home.png?raw=true" width="300"/>
   <img src="https://github.com/janicetan12/lco/blob/master/images/places.png?raw=true" width="300"/>
 </p>
 
-![Home Tab](https://github.com/janicetan12/lco/blob/master/images/home.png?raw=true)
-![Places Tab](https://github.com/janicetan12/lco/blob/master/images/places.png?raw=true)
-![Places - Sort](https://github.com/janicetan12/lco/blob/master/images/places_sort.png?raw=true)
-![Places - Filter](https://github.com/janicetan12/lco/blob/master/images/places_filter.png?raw=true)
-![Places - Search](https://github.com/janicetan12/lco/blob/master/images/places_search.png?raw=true)
+<p>
+  <img src="https://github.com/janicetan12/lco/blob/master/images/places_sort.png?raw=true" width="300"/>
+  <img src="https://github.com/janicetan12/lco/blob/master/images/places_filter.png?raw=true" width="300"/>
+  <img src="https://github.com/janicetan12/lco/blob/master/images/places_search.png?raw=true" width="300"/>  
+</p>
+
 
 ## Acknowledgments
 ButtonBar - Material Design Bottom Navigation https://github.com/roughike/BottomBar
