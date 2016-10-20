@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     FragmentPlace fragmentPlace;
     FragmentHome fragmentHome;
     FragmentMap fragmentMap;
-    FragmentItenerary fragmentItenerary;
+    FragmentItinerary fragmentItinerary;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         fragmentPlace = new FragmentPlace();
         fragmentHome = new FragmentHome();
         fragmentMap = new FragmentMap();
-        fragmentItenerary = new FragmentItenerary();
+        fragmentItinerary = new FragmentItinerary();
 
 
         BottomBar bottomBar = (BottomBar) findViewById(R.id.bottomBar);
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                         fragmentTransaction.replace(R.id.frameLayout, fragmentMap);
                         break;
                     case R.id.tab_itenerary:
-                        fragmentTransaction.replace(R.id.frameLayout, fragmentItenerary);
+                        fragmentTransaction.replace(R.id.frameLayout, fragmentItinerary);
                         break;
                 }
 

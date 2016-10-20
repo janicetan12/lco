@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -79,7 +78,7 @@ public class PlacesArrayAdapter extends ArrayAdapter <Place> {
         }
 
         String uri = "@drawable/" + fileName;
-        Log.d(TAG, uri);
+        //Log.d(TAG, uri);
         int imageResource = context.getResources().getIdentifier(uri, null, context.getPackageName());
         Drawable drawable = context.getResources().getDrawable(imageResource, null);
         viewHolder.layout.setBackground(drawable);

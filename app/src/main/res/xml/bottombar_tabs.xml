@@ -2,17 +2,17 @@
     <tab
         id="@+id/tab_home"
         icon="@drawable/ic_home_black_24dp"
-        title="Home"/>
+        title="@string/tab_home"/>
     <tab
         id="@+id/tab_places"
         icon="@drawable/ic_place_black_24dp"
-        title="Places"/>
+        title="@string/tab_places"/>
     <tab
         id="@+id/tab_map"
         icon="@drawable/ic_map_black_24dp"
-        title="Map"/>
+        title="@string/tab_map"/>
     <tab
         id="@+id/tab_itenerary"
         icon="@drawable/ic_local_activity_black_24dp"
-        title="Itenerary"/>
+        title="@string/tab_itinerary"/>
 </tabs>

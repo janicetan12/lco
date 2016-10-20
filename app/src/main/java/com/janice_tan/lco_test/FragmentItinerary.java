@@ -11,7 +11,7 @@ import android.view.ViewGroup;
  * Created by janice on 19/10/16.
  */
 
-public class FragmentItenerary extends Fragment {
+public class FragmentItinerary extends Fragment {
 
 
     @Nullable
