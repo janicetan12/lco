@@ -38,6 +38,11 @@ PLACES
 * CATEGORY_ID (INTEGER)
 
 ## App Screenshots
+<p align="center">
+  <img src="https://github.com/janicetan12/lco/blob/master/images/home.png?raw=true" width="300"/>
+  <img src="https://github.com/janicetan12/lco/blob/master/images/places.png?raw=true" width="300"/>
+</p>
+
 ![Home Tab](https://github.com/janicetan12/lco/blob/master/images/home.png?raw=true)
 ![Places Tab](https://github.com/janicetan12/lco/blob/master/images/places.png?raw=true)
 ![Places - Sort](https://github.com/janicetan12/lco/blob/master/images/places_sort.png?raw=true)
