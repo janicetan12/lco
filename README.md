@@ -39,14 +39,14 @@ PLACES
 
 ## App Screenshots
 <p>
-  <img src="https://github.com/janicetan12/lco/blob/master/images/home.png?raw=true" width="300"/>
-  <img src="https://github.com/janicetan12/lco/blob/master/images/places.png?raw=true" width="300"/>
+  <img src="https://github.com/janicetan12/lco/blob/master/images/home.png?raw=true" width="290"/>
+  <img src="https://github.com/janicetan12/lco/blob/master/images/places.png?raw=true" width="290"/>
 </p>
 
 <p>
-  <img src="https://github.com/janicetan12/lco/blob/master/images/places_sort.png?raw=true" width="300"/>
-  <img src="https://github.com/janicetan12/lco/blob/master/images/places_filter.png?raw=true" width="300"/>
-  <img src="https://github.com/janicetan12/lco/blob/master/images/places_search.png?raw=true" width="300"/>  
+  <img src="https://github.com/janicetan12/lco/blob/master/images/places_sort.png?raw=true" width="290"/>
+  <img src="https://github.com/janicetan12/lco/blob/master/images/places_filter.png?raw=true" width="290"/>
+  <img src="https://github.com/janicetan12/lco/blob/master/images/places_search.png?raw=true" width="290"/>  
 </p>
 
 
