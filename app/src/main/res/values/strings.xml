@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">LCO-test</string>
+
+    <string name="tab_home">Home</string>
+    <string name="tab_places">Places</string>
+    <string name="tab_map">Map</string>
+    <string name="tab_itenerary">Itenerary</string>
+
+    <string name="action_menu">Menu</string>
+    <string name="action_search">Search</string>
+    <string name="action_filter">Filter</string>
+    <string name="action_sort">Sort</string>
+
+    <string name="sort_alphabet_asc">Alphabet (A - Z)</string>
+    <string name="sort_alphabet_desc">Alphabet (Z - A)</string>
+    <string name="sort_rating_asc">Rating (1 - 5)</string>
+    <string name="sort_rating_desc">Rating (5 - 1)</string>
+    <string name="sort_date_desc">Updated Date (Newest)</string>
+    <string name="sort_date_asc">Updated Date (Oldest)</string>
+
+    <string name="search_hint">Search for Place</string>
+
+</resources>
